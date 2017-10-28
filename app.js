@@ -11,8 +11,8 @@ var messageRoutes = require('./routes/messages');
 var userRoutes = require('./routes/user');
 
 var app = express();
-mongoose.connect('mongodb://mehdi:mehdi@ds237475.mlab.com:37475/node-angular', {useMongoClient:true})
-// mongoose.connect('mongodb://localhost:27017/node-angular', {useMongoClient:true})
+// mongoose.connect('mongodb://mehdi:mehdi@ds237475.mlab.com:37475/node-angular', {useMongoClient:true})
+mongoose.connect('mongodb://localhost:27017/node-angular', {useMongoClient:true})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
